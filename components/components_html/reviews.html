@@ -1,0 +1,27 @@
+<!-- Reviews Section -->
+<div class="bg-black opacity-75 text-white py-16 px-6 sm:px-12 lg:px-20">
+    
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-extrabold text-center text-white mb-16">What Our Clients Say</h2>
+      
+      <!-- Review Cards -->
+      <div class="max-w-3xl mx-auto space-y-8 h-review">
+        <% reviews.forEach((review, index) => { %>
+          <div class="review text-center <%= index !== 0 ? 'hidden' : '' %>">
+            <p class="font-semibold text-2xl text-yellow-500">
+              <%= review.name %> <span class="text-white"><%= review.rating %></span>
+            </p>
+            <p class="text-gray-200 mt-4 text-sm"><%= review.text %></p>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+
+    <!-- Leave a Review Button -->
+    <div class="text-center">
+      <a href="#" class="inline-block px-10 py-4 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600 transition duration-300">
+        Leave a Review
+      </a>
+    </div>
+
+</div>

@@ -1,0 +1,26 @@
+.socials {
+  transition: all .3s ease-in-out;
+}
+.socials-right {
+  transform: translateX(10rem);
+}
+.socials-left {
+  transform: translateX(0);
+}
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+
+  /* Socials */
+  .socials {
+    transition: all .3s ease-in-out;
+  }
+  .socials-right {
+    transform: translateX(10rem);
+  }
+  .socials-left {
+    transform: translateX(0);
+  }
+  
+}
+
+

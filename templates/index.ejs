@@ -1,0 +1,194 @@
+<main>
+
+  <!-- Parallax Section -->
+  <section class="relative text-white py-6 px-6 md:px-10 lg:px-20 h-screen overflow-hidden">
+    <!-- Parallax Image Section -->
+    <div class="parallax-bg absolute top-0 left-0 w-full h-full bg-cover bg-center z-[-1]" style="background-image: url('../assets/public/images/<%= parallaxIndexImage %>');"></div>
+
+    <div class="container mx-auto relative z-10 text-center flex flex-col items-center justify-center h-full mt-20">
+      <!-- Dynamic Content from JSON -->
+      <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+        <%= headline %>
+      </h2>
+
+      <!-- Message Above Arrow -->
+      <h3 class="text-sm text-white mb-4 mt-10"><%= parallaxButtonLHeader %></h3>
+
+      <!-- Arrow Animation -->
+      <a href="#next-section" class="inline-block mt-3 animate-bounce">
+        <i class="fas fa-arrow-down"></i> <!-- Font Awesome Arrow Icon -->
+      </a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <div id="next-section" class="flex flex-col lg:flex-row items-center justify-between gap-12 p-5">
+
+    <!-- About Us Text -->
+    <div class="flex-1 text-center lg:text-left">
+      <p class="text-gray-700 mb-6 px-6 text-sm">
+        <%= aboutUsSection.paragraphOne %>
+      </p>
+      <p class="text-gray-700 mb-6 px-6 text-sm">
+        <%= aboutUsSection.paragraphTwo %>
+      </p>
+      <p class="text-gray-700 px-6 text-sm">
+        <%= aboutUsSection.paragraphThree %>
+      </p>
+    </div>
+
+    <!-- 3D Slider -->
+    <div class="flex-1 overflow-hidden">
+      <div class="slider-3d-wrapper">
+          <div class="slider-3d-container">
+              <div class="slider-3d-track">
+                  <div class="slider-3d-item">
+                      <img src="../assets/public/images/<%= aboutUsSection.images[0] %>" alt="Slide 1">
+                  </div>
+                  <div class="slider-3d-item">
+                      <img src="../assets/public/images/<%= aboutUsSection.images[1] %>" alt="Slide 2">
+                  </div>
+                  <div class="slider-3d-item">
+                      <img src="../assets/public/images/<%= aboutUsSection.images[2] %>" alt="Slide 3">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Our Services -->
+  <section id="services" class="py-24 bg-gray-200 px-6 md:px-10 lg:px-20 overflow-hidden">
+    <div class="container mx-auto overflow-hidden">
+      <h2 class="text-4xl font-extrabold text-black text-center mb-16">Our Services</h2>
+      <!-- Service Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Business Websites -->
+        <div class="service-card bg-gray-100 p-8 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center">
+              <span class="material-icons">business_center</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-semibold text-center mb-6"><%= services[0].title %></h3>
+          <ul class="text-gray-700 list-disc pl-6 space-y-3">
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[0].bullets[0] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[0].bullets[1] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[0].bullets[2] %> reach.</li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[0].bullets[3] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[0].bullets[4] %></li>
+          </ul>
+        </div>
+        <!-- E-Commerce -->
+        <div class="service-card bg-gray-100 p-8 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center">
+              <span class="material-icons">shopping_cart</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-semibold text-center mb-6"><%= services[1].title %></h3>
+          <ul class="text-gray-700 list-disc pl-6 space-y-3">
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[1].bullets[0] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[1].bullets[1] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[1].bullets[2] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[1].bullets[3] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[1].bullets[4] %></li>
+          </ul>
+        </div>
+        <!-- Landing Pages -->
+        <div class="service-card bg-gray-100 p-8 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-yellow-500 text-white rounded-full flex items-center justify-center">
+              <span class="material-icons">pageview</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-semibold text-center mb-6"><%= services[2].title %></h3>
+          <ul class="text-gray-700 list-disc pl-6 space-y-3">
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[2].bullets[0] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[2].bullets[1] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[2].bullets[2] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[2].bullets[3] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[2].bullets[4] %></li>
+          </ul>
+        </div>
+        <!-- Portfolio -->
+        <div class="service-card bg-gray-100 p-8 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-red-500 text-white rounded-full flex items-center justify-center">
+              <span class="material-icons">portrait</span>
+            </div>
+          </div>
+          <h3 class="text-2xl font-semibold text-center mb-6"><%= services[3].title %></h3>
+          <ul class="text-gray-700 list-disc pl-6 space-y-3">
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[3].bullets[0] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[3].bullets[1] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[3].bullets[2] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[3].bullets[3] %></li>
+            <li><i class="fas fa-check-circle  mr-3"></i><%= services[3].bullets[4] %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <div class="text-white py-16 px-6 sm:px-12 lg:px-20">
+      
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-extrabold text-center text-black mb-16">What Our Clients Say</h2>
+      
+      <!-- Review Cards -->
+      <div class="max-w-3xl mx-auto space-y-8 h-review">
+        <% reviews.forEach((review, index) => { %>
+          <div class="review text-center <%= index !== 0 ? 'hidden' : '' %>">
+            <p class="font-semibold text-2xl text-black">
+              <%= review.name %> <span class="text-black"><%= review.rating %></span>
+            </p>
+            <p class="text-black mt-4 text-sm"><%= review.text %></p>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+
+    <!-- Leave a Review Button -->
+    <div class="text-center">
+      <a href="#" class="inline-block border-2 px-10 py-4 border-black text-black font-semibold transition duration-300">
+        Leave a Review
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Form -->
+  <form id="form" class="contact-form">
+    <div class="flex justify-center align-center pb-32">
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-xl w-96 border border-gray-300">
+          <Legend class="text-2xl font-semibold text-center text-white mb-6">Contact Us</Legend>
+          
+          <label class="block text-white font-medium">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Name" title="Only letters and white spaces" class="w-full p-3 border border-gray-300 bg-white rounded-lg focus:ring-2 focus:ring-gray-400 focus:outline-none transition-all text-gray-900" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" required>
+          <label class="block mt-4 text-white font-medium">Telephone:</label>
+          <input type="text" id="telephone" name="telephone" class="w-full p-3 border border-gray-300 bg-white rounded-lg focus:ring-2 focus:ring-gray-400 focus:outline-none transition-all text-gray-900">
+          <label class="block mt-4 text-white font-medium">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Email" title="Incorrect email" class="w-full p-3 border border-gray-300 bg-white rounded-lg focus:ring-2 focus:ring-gray-400 focus:outline-none transition-all text-gray-900" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9]+(\.[a-z0-9]+)*(\.[a-z]{2,15})$" required>
+          <label class="block mt-4 text-white font-medium">Message:</label>
+          <textarea id="message" name="message" class="w-full p-3 border border-gray-300 bg-white rounded-lg h-24 resize-none focus:ring-2 focus:ring-gray-400 focus:outline-none transition-all text-gray-900" placeholder="Send me a message" title="No more than 255 characters" data-pattern="^.{1,255}$" required></textarea></textarea>
+          
+          <input type="submit" class="mt-6 w-full text-gray-800 p-3 rounded-lg transition-all shadow-md" value="Send"></button>
+
+          <!-- Loader -->
+          <div class="contact-form-loader none w-full flex justify-center">
+            <img src="../assets/public/images/loader.svg" alt="Loading">
+          </div>
+          <div class="contact-form-response none mt-10">
+            <p class="text-green-400"></p>
+          </div>
+      </div>
+    </div>
+  </form> 
+  
+  <div id="element-example-id"></div>
+
+</main>
