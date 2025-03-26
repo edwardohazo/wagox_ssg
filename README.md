@@ -15,6 +15,7 @@ Once you have the **SSG** set up, you need to create a sibling directory structu
 
 ### Required Directory Layout
 
+```plaintext
 frontend/
 ├── output/
 │   ├── site/
@@ -27,6 +28,7 @@ frontend/
 │   │   ├── en/
 │   │   ├── es/
 │   │   ├── fr/
+```
 
 
 ## Setting Up the Structure
