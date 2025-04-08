@@ -1,6 +1,6 @@
 {
   "name": "wagox_ssg",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "static site generator",
   "main": "index.js",
   "type": "module",

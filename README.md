@@ -139,6 +139,8 @@ You can find built in components with its corresponding js, php and css files in
 3. Paste it on your ejs created file
 4. Create a js file inside frontend/output/site/assets/src/scripts with the same name as the html linked file
 5. Add its css inside ssg\components\components_css to frontend/output/site/assets/public/css/styles.css file
+6. Add the path to the base.json file
+7. Add the placeholder ejs to the script tag inside ssg\baseTemplate\base.ejs file
 
 ## Tailwind utility classes order
 
