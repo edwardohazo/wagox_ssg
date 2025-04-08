@@ -106,9 +106,11 @@ cp ./wagox_ssg/assets/images.json ./frontend/output/site/assets/data
 
 ## Notes
 - The `assets/public/` directory contains styles, fonts, and images.
+- Make sure images inside `frontend\output\site\assets\public\images` folder are stored with same names as the ones writen on `frontend\output\site\assets\data\images.json` file.
 - The `assets/src/scripts` directory contains JavaScript files originally located in `ssg/components/components_js/` and `ssg/components/general_js/`.
 - The `site/en/`, `site/es/`, and `site/fr/` directories store localized versions of the static site.
 - The SSG should be configured to generate files into the correct language directories.
+
 
 
 ## Running the SSG
