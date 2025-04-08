@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+  
+  const currentPath = window.location.pathname;
+  if (currentPath.includes('/about')) {
+    return;
+  }
+
+  let lastScrollTop = 0;
 
   // Function to load reusable components
   function loadComponent(file, elementId) {
@@ -13,7 +20,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Load carousel
-  loadComponent("../assets/src/components/example-component.html", "element-example-id");
+  loadComponent("../assets/src/components/carousel.html", "carousel");
+
+  // Header show and hide toggle effect
+  window.addEventListener("scroll", () => {
+
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+  
+  });
 
 });
 

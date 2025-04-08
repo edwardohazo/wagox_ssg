@@ -1,3 +1,21 @@
+/* Header */
+.header {
+    transition: all .3s ease-in-out;
+    background-color: #fff;
+    z-index: 100;
+}
+.header-up {
+    transform: translateY(-100%);
+}
+.header-down {
+    transform: translateY(0);
+}
+/* Mobile menu */
+.mobile-menu {
+  position: relative;
+  z-index: 110;
+}
+/* Socials */
 .socials {
   transition: all .3s ease-in-out;
 }
@@ -6,10 +24,10 @@
 }
 .socials-left {
   transform: translateX(0);
-}
+  }
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
-
+  
   /* Socials */
   .socials {
     transition: all .3s ease-in-out;
@@ -20,7 +38,5 @@
   .socials-left {
     transform: translateX(0);
   }
-  
+    
 }
-
-

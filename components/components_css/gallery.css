@@ -1,0 +1,32 @@
+/* Masonry Grid Layout */
+.gallery-grid {
+    column-count: 4; /* Number of columns */
+    column-gap: 5px; /* Spacing between columns */
+    padding: 20px;
+  }
+  .item {
+    position: relative;
+    background-color: #f0f0f0; /* Optional: for better visibility */
+    overflow: hidden;
+    break-inside: avoid; /* Prevent items from breaking across columns */
+    margin-bottom: 5px; /* Spacing between items */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .item img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .gallery-grid {
+        column-count: 3; /* 2 columns on smaller screens */
+    }
+  }
+  @media (max-width: 480px) {
+  
+    .gallery-grid {
+        column-count: 3; /* 1 column on mobile */
+    }
+  
+  }

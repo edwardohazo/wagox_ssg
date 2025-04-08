@@ -1,38 +1,43 @@
 <main>
 
   <!-- Parallax Section -->
-  <section class="relative text-white py-6 px-6 md:px-10 lg:px-20 h-screen overflow-hidden">
+  <section class="relative h-screen overflow-hidden py-6 px-6 md:px-10 lg:px-20 text-white">
     <!-- Parallax Image Section -->
-    <div class="parallax-bg absolute top-0 left-0 w-full h-full bg-cover bg-center z-[-1]" style="background-image: url('../assets/public/images/<%= parallaxIndexImage %>');"></div>
+    <div
+      class="parallax-bg absolute top-0 left-0 z-[-1] h-full w-full bg-cover bg-center"
+      style="background-image: url('../assets/public/images/<%= parallaxIndexImage %>');"
+    ></div>
 
-    <div class="container mx-auto relative z-10 text-center flex flex-col items-center justify-center h-full mt-20">
+    <div class="container relative z-10 mx-auto flex h-full flex-col items-center justify-center text-center mt-20">
       <!-- Dynamic Content from JSON -->
-      <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+      <h2 class="mb-6 text-5xl font-extrabold leading-tight tracking-tight text-white md:text-6xl">
         <%= headline %>
       </h2>
 
       <!-- Message Above Arrow -->
-      <h3 class="text-sm text-white mb-4 mt-10"><%= parallaxButtonLHeader %></h3>
+      <h3 class="mt-10 mb-4 text-sm text-white">
+        <%= parallaxButtonLHeader %>
+      </h3>
 
       <!-- Arrow Animation -->
-      <a href="#next-section" class="inline-block mt-3 animate-bounce">
-        <i class="fas fa-arrow-down"></i> <!-- Font Awesome Arrow Icon -->
+      <a href="#next-section" class="mt-3 inline-block animate-bounce">
+        <i class="fas fa-arrow-down"></i>
       </a>
     </div>
   </section>
 
   <!-- About Us Section -->
-  <div id="next-section" class="flex flex-col lg:flex-row items-center justify-between gap-12 p-5">
+  <div id="next-section" class="flex flex-col gap-12 p-5 lg:flex-row items-center justify-between">
 
     <!-- About Us Text -->
     <div class="flex-1 text-center lg:text-left">
-      <p class="text-gray-700 mb-6 px-6 text-sm">
+      <p class="mb-6 text-sm text-gray-700 px-6">
         <%= aboutUsSection.paragraphOne %>
       </p>
-      <p class="text-gray-700 mb-6 px-6 text-sm">
+      <p class="mb-6 text-sm text-gray-700 px-6">
         <%= aboutUsSection.paragraphTwo %>
       </p>
-      <p class="text-gray-700 px-6 text-sm">
+      <p class="text-sm text-gray-700 px-6">
         <%= aboutUsSection.paragraphThree %>
       </p>
     </div>
@@ -40,127 +45,193 @@
     <!-- 3D Slider -->
     <div class="flex-1 overflow-hidden">
       <div class="slider-3d-wrapper">
-          <div class="slider-3d-container">
-              <div class="slider-3d-track">
-                  <div class="slider-3d-item">
-                      <img src="../assets/public/images/<%= aboutUsSection.images[0] %>" alt="Slide 1">
-                  </div>
-                  <div class="slider-3d-item">
-                      <img src="../assets/public/images/<%= aboutUsSection.images[1] %>" alt="Slide 2">
-                  </div>
-                  <div class="slider-3d-item">
-                      <img src="../assets/public/images/<%= aboutUsSection.images[2] %>" alt="Slide 3">
-                  </div>
-              </div>
+        <div class="slider-3d-container">
+          <div class="slider-3d-track">
+            <div class="slider-3d-item">
+              <img src="../assets/public/images/<%= aboutUsSection.images[0] %>" alt="Slide 1">
+            </div>
+            <div class="slider-3d-item">
+              <img src="../assets/public/images/<%= aboutUsSection.images[1] %>" alt="Slide 2">
+            </div>
+            <div class="slider-3d-item">
+              <img src="../assets/public/images/<%= aboutUsSection.images[2] %>" alt="Slide 3">
+            </div>
           </div>
+        </div>
       </div>
     </div>
 
   </div>
 
   <!-- Our Services -->
-  <section id="services" class="py-24 bg-gray-200 px-6 md:px-10 lg:px-20 overflow-hidden">
+  <section id="services" class="py-24 px-6 bg-gray-200 overflow-hidden md:px-10 lg:px-20">
     <div class="container mx-auto overflow-hidden">
-      <h2 class="text-4xl font-extrabold text-black text-center mb-16">Our Services</h2>
+      <h2 class="mb-16 text-4xl font-extrabold text-center text-black"><%= ourServicesSection.ourServicesHeader %></h2>
       <!-- Service Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         
         <!-- Business Websites -->
-        <div class="service-card bg-gray-100 p-8 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+        <div class="service-card p-8 bg-gray-100 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
           <div class="flex items-center justify-center mb-6">
             <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center">
               <span class="material-icons">business_center</span>
             </div>
           </div>
-          <h3 class="text-2xl font-semibold text-center mb-6"><%= services[0].title %></h3>
-          <ul class="text-gray-700 list-disc pl-6 space-y-3">
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[0].bullets[0] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[0].bullets[1] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[0].bullets[2] %> reach.</li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[0].bullets[3] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[0].bullets[4] %></li>
+          <h3 class="mb-6 text-2xl font-semibold text-center"><%= ourServicesSection.services[0].title %></h3>
+          <ul class="pl-6 space-y-3 text-sm text-gray-700 list-disc">
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[0].bullets[0] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[0].bullets[1] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[0].bullets[2] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[0].bullets[3] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[0].bullets[4] %></li>
           </ul>
         </div>
         <!-- E-Commerce -->
-        <div class="service-card bg-gray-100 p-8 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+        <div class="service-card p-8 bg-gray-100 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
           <div class="flex items-center justify-center mb-6">
             <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center">
               <span class="material-icons">shopping_cart</span>
             </div>
           </div>
-          <h3 class="text-2xl font-semibold text-center mb-6"><%= services[1].title %></h3>
-          <ul class="text-gray-700 list-disc pl-6 space-y-3">
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[1].bullets[0] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[1].bullets[1] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[1].bullets[2] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[1].bullets[3] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[1].bullets[4] %></li>
+          <h3 class="mb-6 text-2xl font-semibold text-center"><%= ourServicesSection.services[1].title %></h3>
+          <ul class="pl-6 space-y-3 text-sm text-gray-700 list-disc">
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[1].bullets[0] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[1].bullets[1] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[1].bullets[2] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[1].bullets[3] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[1].bullets[4] %></li>
           </ul>
         </div>
         <!-- Landing Pages -->
-        <div class="service-card bg-gray-100 p-8 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+        <div class="service-card p-8 bg-gray-100 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
           <div class="flex items-center justify-center mb-6">
             <div class="w-16 h-16 bg-yellow-500 text-white rounded-full flex items-center justify-center">
               <span class="material-icons">pageview</span>
             </div>
           </div>
-          <h3 class="text-2xl font-semibold text-center mb-6"><%= services[2].title %></h3>
-          <ul class="text-gray-700 list-disc pl-6 space-y-3">
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[2].bullets[0] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[2].bullets[1] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[2].bullets[2] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[2].bullets[3] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[2].bullets[4] %></li>
+          <h3 class="mb-6 text-2xl font-semibold text-center"><%= ourServicesSection.services[2].title %></h3>
+          <ul class="pl-6 space-y-3 text-sm text-gray-700 list-disc">
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[2].bullets[0] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[2].bullets[1] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[2].bullets[2] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[2].bullets[3] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[2].bullets[4] %></li>
           </ul>
         </div>
         <!-- Portfolio -->
-        <div class="service-card bg-gray-100 p-8 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+        <div class="service-card p-8 bg-gray-100 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
           <div class="flex items-center justify-center mb-6">
             <div class="w-16 h-16 bg-red-500 text-white rounded-full flex items-center justify-center">
               <span class="material-icons">portrait</span>
             </div>
           </div>
-          <h3 class="text-2xl font-semibold text-center mb-6"><%= services[3].title %></h3>
-          <ul class="text-gray-700 list-disc pl-6 space-y-3">
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[3].bullets[0] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[3].bullets[1] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[3].bullets[2] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[3].bullets[3] %></li>
-            <li><i class="fas fa-check-circle  mr-3"></i><%= services[3].bullets[4] %></li>
+          <h3 class="mb-6 text-2xl font-semibold text-center"><%= ourServicesSection.services[3].title %></h3>
+          <ul class="pl-6 space-y-3 text-sm text-gray-700 list-disc">
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[3].bullets[0] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[3].bullets[1] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[3].bullets[2] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[3].bullets[3] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[3].bullets[4] %></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Reviews Section -->
-  <div class="text-white py-16 px-6 sm:px-12 lg:px-20">
-      
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-4xl font-extrabold text-center text-black mb-16">What Our Clients Say</h2>
-      
-      <!-- Review Cards -->
-      <div class="max-w-3xl mx-auto space-y-8 h-review">
-        <% reviews.forEach((review, index) => { %>
-          <div class="review text-center <%= index !== 0 ? 'hidden' : '' %>">
-            <p class="font-semibold text-2xl text-black">
-              <%= review.name %> <span class="text-black"><%= review.rating %></span>
-            </p>
-            <p class="text-black mt-4 text-sm"><%= review.text %></p>
+  <!-- Reviews Section V2 -->
+  <section class="relative py-48 px-6 md:px-10 lg:px-20 overflow-hidden text-white">
+    <!-- Parallax Image Section -->
+    <div class="absolute top-0 left-0 z-[-1] w-full h-full bg-cover bg-center parallax-bg-review" style="background-image: url('../assets/public/images/parallax-index-image.jpg');"></div>
+
+    <!-- Reviews - v2 -->
+    <div class="relative w-full mx-auto overflow-hidden hidden md:block lg:block">
+      <div id="review-slider" class="flex transition-transform duration-500 ease-in-out" data-total-slides="<%= Math.ceil(reviews.length / 3) %>">
+        <% for (let i = 0; i < reviews.length; i += 3) { %>
+          <div class="flex w-full flex-shrink-0 gap-4 px-2 justify-start"> <!-- Added px-2 for padding -->
+
+            <% reviews.slice(i, i + 3).forEach(review => { %>
+              <div class="w-1/3 p-6 bg-gray-800 shadow-lg rounded-lg flex flex-col items-center text-center hover:translate-y-4 transition-transform duration-300 ease-in-out">
+                <!-- Author and Date -->
+                <p class="text-white font-semibold"><%= review.name %></p>
+                <p class="text-white text-sm"><%= review.date %></p>
+
+                <!-- Star Rating -->
+                <div class="flex justify-center my-2">
+                  <% for (let j = 0; j < 5; j++) { %>
+                    <% if (j < review.rating.length) { %>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                    <% } else { %>
+                      <i class="fa-regular fa-star text-white"></i>
+                    <% } %>
+                  <% } %>
+                </div>
+
+                <!-- Review Text -->
+                <div class="w-full text-left review-content">
+                  <div class="relative review-text-container">
+                    <p class="text-white clamp-3 review-text">
+                      "<%= review.text %>"
+                    </p>
+                    <% if (review.text.length > 150) { %> 
+                      <button class="mt-2 text-blue-500 hover:underline read-more-btn">Read More</button>
+                    <% } %>
+                  </div>
+                </div>
+
+              </div>
+            <% }); %>
+
           </div>
-        <% }); %>
+        <% } %>
       </div>
-    </div>
+    </div>  
 
-    <!-- Leave a Review Button -->
-    <div class="text-center">
-      <a href="#" class="inline-block border-2 px-10 py-4 border-black text-black font-semibold transition duration-300">
-        Leave a Review
-      </a>
-    </div>
+    <!-- Reviews - v2 - mobile -->
+    <div class="relative w-full mx-auto overflow-hidden block md:hidden lg:hidden">
+      <div id="review-slider-mobile" class="flex transition-transform duration-500 ease-in-out" data-total-slides="<%= reviews.length %>">
+        <% for (let i = 0; i < reviews.length; i += 1) { %>
+          <div class="flex w-full flex-shrink-0 gap-4 px-2 justify-start"> <!-- Added px-2 for padding -->
 
-  </div>
+            <% reviews.slice(i, i + 1).forEach(review => { %>
+              <div class="w-full p-6 bg-gray-800 shadow-lg rounded-lg flex flex-col items-center text-center hover:translate-y-4 transition-transform duration-300 ease-in-out">
+                <!-- Author and Date -->
+                <p class="text-white font-semibold"><%= review.name %></p>
+                <p class="text-white text-sm"><%= review.date %></p>
 
+                <!-- Star Rating -->
+                <div class="flex justify-center my-2">
+                  <% for (let j = 0; j < 5; j++) { %>
+                    <% if (j < review.rating.length) { %>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                    <% } else { %>
+                      <i class="fa-regular fa-star text-white"></i>
+                    <% } %>
+                  <% } %>
+                </div>
+
+                <!-- Review Text -->
+                <div class="w-full text-left review-content">
+                  <div class="relative review-text-container">
+                    <p class="text-white clamp-3 review-text">
+                      "<%= review.text %>"
+                    </p>
+                    <% if (review.text.length > 150) { %> 
+                      <button class="mt-2 text-blue-500 hover:underline read-more-btn-mobile">Read More</button>
+                    <% } %>
+                  </div>
+                </div>
+
+              </div>
+            <% }); %>
+
+          </div>
+        <% } %>
+      </div>
+    </div>  
+
+  </section>
+
+  <!-- TODO: Order form utility classes by hand / Use convention -->
   <!-- Form -->
   <form id="form" class="contact-form">
     <div class="flex justify-center align-center pb-32">
@@ -188,7 +259,15 @@
       </div>
     </div>
   </form> 
-  
-  <div id="element-example-id"></div>
+
+  <!-- Loading Gallery Component -->
+  <div id="gallery-grid" class="gallery-grid mt-96" >
+  </div>
+
+  <div id="loader" class="text-center py-8">
+    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-black mx-auto"></div>
+  </div>
+
+  <div id="carousel"></div>
 
 </main>

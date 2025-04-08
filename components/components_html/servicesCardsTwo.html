@@ -1,0 +1,74 @@
+<!-- Our Services -->
+<section id="services" class="py-24 px-6 bg-gray-200 overflow-hidden md:px-10 lg:px-20">
+    <div class="container mx-auto overflow-hidden">
+      <h2 class="mb-16 text-4xl font-extrabold text-center text-black"><%= ourServicesSection.ourServicesHeader %></h2>
+      <!-- Service Cards -->
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        
+        <!-- Business Websites -->
+        <div class="service-card p-8 bg-gray-100 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center">
+              <span class="material-icons">business_center</span>
+            </div>
+          </div>
+          <h3 class="mb-6 text-2xl font-semibold text-center"><%= ourServicesSection.services[0].title %></h3>
+          <ul class="pl-6 space-y-3 text-sm text-gray-700 list-disc">
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[0].bullets[0] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[0].bullets[1] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[0].bullets[2] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[0].bullets[3] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[0].bullets[4] %></li>
+          </ul>
+        </div>
+        <!-- E-Commerce -->
+        <div class="service-card p-8 bg-gray-100 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center">
+              <span class="material-icons">shopping_cart</span>
+            </div>
+          </div>
+          <h3 class="mb-6 text-2xl font-semibold text-center"><%= ourServicesSection.services[1].title %></h3>
+          <ul class="pl-6 space-y-3 text-sm text-gray-700 list-disc">
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[1].bullets[0] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[1].bullets[1] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[1].bullets[2] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[1].bullets[3] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[1].bullets[4] %></li>
+          </ul>
+        </div>
+        <!-- Landing Pages -->
+        <div class="service-card p-8 bg-gray-100 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-yellow-500 text-white rounded-full flex items-center justify-center">
+              <span class="material-icons">pageview</span>
+            </div>
+          </div>
+          <h3 class="mb-6 text-2xl font-semibold text-center"><%= ourServicesSection.services[2].title %></h3>
+          <ul class="pl-6 space-y-3 text-sm text-gray-700 list-disc">
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[2].bullets[0] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[2].bullets[1] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[2].bullets[2] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[2].bullets[3] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[2].bullets[4] %></li>
+          </ul>
+        </div>
+        <!-- Portfolio -->
+        <div class="service-card p-8 bg-gray-100 transform opacity-0 translate-x-10 hover:transition-all duration-700 hover:opacity-100 hover:translate-x-0 shadow-lg hover:shadow-xl">
+          <div class="flex items-center justify-center mb-6">
+            <div class="w-16 h-16 bg-red-500 text-white rounded-full flex items-center justify-center">
+              <span class="material-icons">portrait</span>
+            </div>
+          </div>
+          <h3 class="mb-6 text-2xl font-semibold text-center"><%= ourServicesSection.services[3].title %></h3>
+          <ul class="pl-6 space-y-3 text-sm text-gray-700 list-disc">
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[3].bullets[0] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[3].bullets[1] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[3].bullets[2] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[3].bullets[3] %></li>
+            <li><i class="fas fa-check-circle mr-3"></i><%= ourServicesSection.services[3].bullets[4] %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>

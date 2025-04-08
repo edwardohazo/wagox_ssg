@@ -4,48 +4,51 @@
       "headline": "We are your best option",
       "parallaxButtonLHeader": "About Us",
       "parallaxIndexImage": "parallax-index-image.jpg",
-      "services": [
-        {
-          "title": "Service 1",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 2",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 3",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 4",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        }
-      ],
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
       "reviews": [
         {
           "name": "BRANDI L.",
@@ -91,48 +94,57 @@
       }
     },
     "about": {
-      "services": [
-        {
-          "title": "Service 1",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 2",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 3",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 4",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        }
-      ],
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
+      "aboutUsSection": {
+        "paragraphOne": "We are a passionate team dedicated to creating top-notch digital solutions.Our goal is to help businesses grow by providing innovative and reliable web and digital marketing services.",
+        "paragraphTwo": "Our team consists of experienced professionals who bring creative ideas and technical expertise to the table, ensuring the success of every project we take on.",
+        "paragraphThree": "Whether you're looking to build a brand-new website, optimize your current online presence, or create compelling marketing campaigns, we've got you covered.",
+        "images": ["slide-1.jpg", "slide-2.jpg", "slide-3.jpg"]
+      },
       "reviews": [
         {
           "name": "BRANDI L.",
@@ -178,48 +190,51 @@
       "headline": "We are your best option",
       "parallaxButtonLHeader": "About Us",
       "parallaxIndexImage": "parallax-index-image.jpg",
-      "services": [
-        {
-          "title": "Service 1",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 2",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 3",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 4",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        }
-      ],
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
       "reviews": [
         {
           "name": "BRANDI L.",
@@ -265,48 +280,57 @@
       }
     },
     "about": {
-      "services": [
-        {
-          "title": "Service 1",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 2",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 3",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 4",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        }
-      ],
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
+      "aboutUsSection": {
+        "paragraphOne": "We are a passionate team dedicated to creating top-notch digital solutions.Our goal is to help businesses grow by providing innovative and reliable web and digital marketing services.",
+        "paragraphTwo": "Our team consists of experienced professionals who bring creative ideas and technical expertise to the table, ensuring the success of every project we take on.",
+        "paragraphThree": "Whether you're looking to build a brand-new website, optimize your current online presence, or create compelling marketing campaigns, we've got you covered.",
+        "images": ["slide-1.jpg", "slide-2.jpg", "slide-3.jpg"]
+      },
       "reviews": [
         {
           "name": "BRANDI L.",
@@ -352,48 +376,51 @@
       "headline": "We are your best option",
       "parallaxButtonLHeader": "About Us",
       "parallaxIndexImage": "parallax-index-image.jpg",
-      "services": [
-        {
-          "title": "Service 1",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 2",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 3",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 4",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        }
-      ],
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
       "reviews": [
         {
           "name": "BRANDI L.",
@@ -439,48 +466,57 @@
       }
     },
     "about": {
-      "services": [
-        {
-          "title": "Service 1",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 2",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 3",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        },
-        {
-          "title": "Service 4",
-          "bullets": [
-            "Bullet 1",
-            "Bullet 2",
-            "Bullet 3",
-            "Bullet 4",
-            "Bullet 5"
-          ]
-        }
-      ],
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
+      "aboutUsSection": {
+        "paragraphOne": "We are a passionate team dedicated to creating top-notch digital solutions.Our goal is to help businesses grow by providing innovative and reliable web and digital marketing services.",
+        "paragraphTwo": "Our team consists of experienced professionals who bring creative ideas and technical expertise to the table, ensuring the success of every project we take on.",
+        "paragraphThree": "Whether you're looking to build a brand-new website, optimize your current online presence, or create compelling marketing campaigns, we've got you covered.",
+        "images": ["slide-1.jpg", "slide-2.jpg", "slide-3.jpg"]
+      },
       "reviews": [
         {
           "name": "BRANDI L.",

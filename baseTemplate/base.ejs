@@ -1,210 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<%= fontAwesomePath %>" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="<%= cssPath %>">
-    <title><%= title %> | <%= pageTitle %></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="<%= fontAwesomePath %>"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="<%= cssPath %>" />
+  <title><%= title %> | <%= pageTitle %></title>
 </head>
 <body>
-    
+
   <!-- Header -->
-  <header id="header" class="header shadow-md fixed w-full">
+  <header id="header" class="fixed w-full shadow-md header">
 
     <!-- DESKTOP -->
-
-    <!-- Button and logo desktop header section -->
-    <div class="container hidden mx-auto px-4 py-4 md:flex md:justify-between md:items-center lg:flex lg:justify-between lg:items-center">
+    <div class="container mx-auto hidden md:flex lg:flex justify-between items-center px-4 py-4">
 
       <!-- Logo for Desktop -->
-      <div class="text-2xl font-bold text-black w-1/3">
-        <a href="index.html" class="hover:text-gray-600 transition duration-300 hidden md:block lg:block">
-          <!-- WAGOX | DESIGN -->
-          <img src="../assets/public/images/logo.png" alt="Logo" class="h-36">
+      <div class="w-1/3 text-2xl font-bold text-black">
+        <a href="index.html" class="hidden md:block lg:block transition duration-300 hover:text-gray-600">
+          <img src="../assets/public/images/logo.png" alt="Logo" class="h-36" />
         </a>
       </div>
 
       <!-- Desktop Menu -->
-      <nav class="w-full hidden md:flex lg:flex relative bg-white w-1/3">
-        <!-- Navigation Items -->
+      <nav class="relative w-1/3 hidden md:flex lg:flex bg-white">
         <ul class="w-full flex justify-evenly py-3">
-          <!-- First link -->
           <li class="ml-10">
-            <a href="<%= navItems[0].href %>" class="text-gray-700 transition duration-300"> <%= navItems[0].text %></a>
+            <a href="<%= navItems[0].href %>" class="text-gray-700 transition duration-300"><%= navItems[0].text %></a>
           </li>
-
-          <!-- Second link -->
           <li class="ml-10">
             <a href="<%= navItems[1].href %>" class="text-gray-700 transition duration-300"><%= navItems[1].text %></a>
           </li>
-
-          <!-- Dropdown - Third link -->
           <li class="ml-10 relative th-link">
             <a href="<%= navItems[2].href %>" class="group text-gray-700 transition duration-300">
               <%= navItems[2].text %>
               <i class="fa-solid fa-chevron-down"></i>
             </a>
-            <ul class="th-link-dropdown-menu absolute hidden bg-white shadow-md rounded-lg mt-2 left-0 w-40">
+            <ul class="absolute left-0 mt-2 w-40 hidden rounded-lg bg-white shadow-md th-link-dropdown-menu">
               <li><a href="<%= navItems[2].dropdown[0].href %>" class="block px-4 py-2 text-gray-700"><%= navItems[2].dropdown[0].text %></a></li>
               <li><a href="<%= navItems[2].dropdown[1].href %>" class="block px-4 py-2 text-gray-700"><%= navItems[2].dropdown[1].text %></a></li>
               <li><a href="<%= navItems[2].dropdown[2].href %>" class="block px-4 py-2 text-gray-700"><%= navItems[2].dropdown[2].text %></a></li>
             </ul>
           </li>
-
         </ul>
       </nav>
 
-      <div class="w-1/3">
-        <button class="bg-black text-white px-20 py-3 border border-transparent hover:bg-white hover:border-black hover:text-black transition duration-300">
-          <a class="text-inherit" href="contact.html">Contact Us</a>
-        </button>        
+      <div class="w-1/3 flex justify-center">
+        <button class="border border-transparent bg-black px-20 py-3 text-white transition duration-300 hover:border-black hover:bg-white hover:text-black">
+          <a href="contact.html" class="text-inherit"><%= contactHeaderButtonText %></a>
+        </button>
       </div>
-
     </div>
 
     <!-- Social Media -->
-    <div id="socials" class="socials text-center px-2 py-4 fixed top-56 bg-white right-0">
+    <div id="socials" class="fixed top-56 right-0 text-center bg-white px-2 py-4 socials">
       <div class="flex flex-col justify-center">
-        <!-- Phone -->
-        <a href="tel:2109666160" target="_blank" class="text-black hover:text-white transition duration-300 my-2">
+        <a href="<%= socials.phone %>" target="_blank" class="my-2 text-black transition duration-300 hover:text-white">
           <i class="fa-solid fa-phone-volume phone-icon"></i>
         </a>
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/ronalbarbershop210" target="_blank" class="text-black hover:text-white transition duration-300 my-2">
+        <a href="<%= socials.instagram %>" target="_blank" class="my-2 text-black transition duration-300 hover:text-white">
           <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <!-- WhatsApp -->
-        <a href="https://api.whatsapp.com/send?phone=%2B12109666160&context=ARAqXq8-HbtGpvjq5LKgOE16RSDHsF4hx-CPV5MyS82m17BtMXybjuSssosnk5Yr02URumPA2fUrVwS4GEi6bSHADVDSBMXSiXsc2PToCoNA8B2prpfTjMcL44n8sQExUr5a9uFfH3F1MiLhAtNoP95wJg&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawIHWBdleHRuA2FlbQIxMAABHdyZHTk_T5PuDwIWgdYUu0dC1mBsMprSKF0Go3lO6NdcNL4-8Xbq--LUoQ_aem_853h4LR_SLnWhI_QW-Xwxw" target="_blank" class="text-black hover:text-white transition duration-300 my-2">
+        <a href="<%= socials.whatsapp %>" target="_blank" class="my-2 text-black transition duration-300 hover:text-white">
           <i class="fab fa-whatsapp fa-2x"></i>
         </a>
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/profile.php?id=100090738468287" target="_blank" class="text-black hover:text-white transition duration-300 my-2">
+        <a href="<%= socials.facebook %>" target="_blank" class="my-2 text-black transition duration-300 hover:text-white">
           <i class="fab fa-facebook fa-2x"></i>
         </a>
-        <!-- TikTok -->
-        <a href=" https://www.tiktok.com/@ronalcanales23" target="_blank" class="text-black hover:text-white transition duration-300 my-2">
+        <a href="<%= socials.tiktok %>" target="_blank" class="my-2 text-black transition duration-300 hover:text-white">
           <i class="fab fa-tiktok fa-2x"></i>
         </a>
       </div>
     </div>
 
     <!-- MOBILE -->
-
-    <!-- Mobile logo section -->
-    <div class="w-full font-bold text-gray-800 md:hidden lg:hidden flex justify-between items-center">
-
+    <div class="flex w-full items-center justify-between text-gray-800 font-bold md:hidden lg:hidden">
       <div></div>
-
-      <a href="index.html" class="hover:text-blue-400 transition duration-300">
-        <!-- WAGOX | DESIGN -->
-        <img src="../assets/public/images/logo.png" alt="Logo" class="logo-mobile h-36">
-        <!-- <img src="../assets/public/images/logo.png" alt="Logo" class="h-20"> -->
+      <a href="index.html" class="transition duration-300 hover:text-blue-400">
+        <img src="../assets/public/images/logo.png" alt="Logo" class="h-36 logo-mobile" />
       </a>
-
-      <button id="menu-toggle" class="md:hidden focus:outline-none justify-self-end">
-        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <button id="menu-toggle" class="justify-self-end focus:outline-none md:hidden">
+        <svg class="h-6 w-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
       </button>
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="md:hidden mobile-menu bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+    <div id="mobile-menu" class="mobile-menu max-h-0 overflow-hidden bg-white shadow-lg transition-all duration-300 ease-in-out md:hidden">
       <ul>
         <% navItems.forEach(function(item) { %>
           <% if (item.dropdown) { %>
             <li class="relative">
-              <button class="w-full text-left text-gray-700 hover:text-blue-400 transition duration-300 py-2 pl-4 flex items-center justify-between dropdown-toggle">
+              <button class="flex w-full items-center justify-between py-2 pl-4 text-left text-gray-700 transition duration-300 hover:text-blue-400 dropdown-toggle">
                 <%= item.text %> <i class="fa-solid fa-chevron-down"></i>
               </button>
-              <ul class="hidden dropdown-menu bg-white shadow-md rounded-lg">
+              <ul class="hidden rounded-lg bg-white shadow-md dropdown-menu">
                 <% item.dropdown.forEach(function(subItem) { %>
-                  <li><a href="<%= subItem.href %>" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><%= subItem.text %></a></li>
+                  <li><a href="<%= subItem.href %>" class="block px-4 py-2 text-gray-700 transition hover:bg-gray-100"><%= subItem.text %></a></li>
                 <% }); %>
               </ul>
             </li>
           <% } else { %>
             <li>
-              <a href="<%= item.href %>" class="block text-gray-700 hover:text-blue-400 transition duration-300 py-2 pl-4 hover:bg-gray-100"><%= item.text %></a>
+              <a href="<%= item.href %>" class="block py-2 pl-4 text-gray-700 transition duration-300 hover:bg-gray-100 hover:text-blue-400"><%= item.text %></a>
             </li>
           <% } %>
         <% }); %>
       </ul>
     </div>
-    
-
   </header>
 
   <!-- Main content -->
   <%- body %>
 
-  <!-- Footer Content -->
-  <footer class="bg-black text-white py-12">
-    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+  <!-- Footer -->
+  <footer class="bg-black py-12 text-white">
+    <div class="container mx-auto grid grid-cols-1 gap-10 px-6 text-center md:grid-cols-3 md:text-left">
       
       <!-- Contact Info -->
       <div>
-        <h3 class="text-xl font-semibold mb-4">Visit Us</h3>
+        <h3 class="mb-4 text-xl font-semibold"><%= footerHeaders.footerHeaderOneText %></h3>
         <p class="text-gray-400"><%= footerInfo.address %></p>
-        <p class="text-gray-400 mt-2">Phone: 
-          <a href="tel:<%= footerInfo.phone %>" class="hover:text-blue-300 transition duration-300">
+        <p class="mt-2 text-gray-400">
+          Phone: 
+          <a href="tel:<%= footerInfo.phone %>" class="transition duration-300 hover:text-blue-300">
             <%= footerInfo.phone %>
           </a>
         </p>
-        <p class="text-gray-400 mt-2">Email: 
-          <a href="mailto:<%= footerInfo.email %>" class="hover:text-blue-300 transition duration-300">
+        <p class="mt-2 text-gray-400">
+          Email: 
+          <a href="mailto:<%= footerInfo.email %>" class="transition duration-300 hover:text-blue-300">
             <%= footerInfo.email %>
           </a>
         </p>
       </div>
-      
+
       <!-- Quick Links -->
       <div>
-        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+        <h3 class="mb-4 text-xl font-semibold"><%= footerHeaders.footerHeaderTwoText %></h3>
         <ul class="space-y-3">
           <% footerLinks.quickLinks.forEach(function(link) { %>
             <li>
-              <a href="<%= link.href %>" class="text-gray-400 hover:text-blue-300 transition duration-300">
+              <a href="<%= link.href %>" class="text-gray-400 transition duration-300 hover:text-blue-300">
                 <%= link.text %>
               </a>
             </li>
           <% }); %>
         </ul>
       </div>
-      
-      <!-- Social Media -->
+
+      <!-- Social -->
       <div>
-        <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
-        <div class="flex justify-center md:justify-start space-x-8">
+        <h3 class="mb-4 text-xl font-semibold"><%= footerHeaders.footerHeaderThreeText %></h3>
+        <div class="flex justify-center space-x-8 md:justify-start">
           <% footerLinks.social.forEach(function(link) { %>
-            <a href="<%= link.url %>" target="_blank" class="text-gray-400 hover:text-blue-300 transition duration-300">
+            <a href="<%= link.url %>" target="_blank" class="text-gray-400 transition duration-300 hover:text-blue-300">
               <i class="<%= link.iconClass %> fa-lg"></i>
             </a>
           <% }); %>
         </div>
       </div>
     </div>
-  
-    <!-- Copyright -->
+
     <div class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
       &copy; <%= currentYear %> <%= footerInfo.companyName %>. All rights reserved.
     </div>
-  </footer>  
-  
-  <!-- Javascript -->
+  </footer>
+
+  <!-- Scripts -->
   <script src="<%= scriptsLinks.headerDynamicsScript %>"></script>
   <script src="<%= scriptsLinks.socialDynamicsScript %>"></script>
   <script src="<%= scriptsLinks.scrollDynamicsScript %>"></script>
+  <script src="<%= scriptsLinks.parallaxImageScript %>"></script>
+  <script src="<%= scriptsLinks.reviewsV2Script %>"></script>
+  <script src="<%= scriptsLinks.reviewsV2mobileScript %>"></script>
+  <script src="<%= scriptsLinks.parallaxImageReviewV2Script %>"></script>
+  <script src="<%= scriptsLinks.galleryScript %>"></script>
   <script src="<%= scriptsLinks.formValidationsScript %>"></script>
-  <script src="<%= scriptsLinks.reviewsScript %>"></script>
   <script src="<%= scriptsLinks.mainScript %>"></script>
   <script src="<%= scriptsLinks.servicesCardsTwoScript %>"></script>
-
-  <!-- In case of loading components -->
-  <!-- <script src="<%= scriptsLinks.loadComponentsScript %>"></script> -->
-
+  <script src="<%= scriptsLinks.loadComponentsScript %>"></script>
 </body>
 </html>
-

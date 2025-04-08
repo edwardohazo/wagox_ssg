@@ -4,6 +4,7 @@
       "title": "Wagox Design",
       "pageTitle": "Welcome to Wagox Design",
       "cssPath": "../assets/public/css/styles.css",
+      "contactHeaderButtonText": "Contact Us",
       "navItems": [
         { "text": "About", "href": "about.html" },
         { "text": "Blogs", "href": "blogs.html" },
@@ -21,6 +22,13 @@
       "workNavItems": [          
         { "href": "projects-gallery.html", "text": "Project Gallery" }
       ],
+      "socials": {
+        "phone": "xxxxxxxxxxxxxx",
+        "instagram": "xxxxxxxxxxxxxx",
+        "facebook": "xxxxxxxxxxxxxx",
+        "whatsapp": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "tiktok": "xxxxxxxxxxxxxx"
+      },
       "fontAwesomePath": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css",
       "currentYear": 2025,
       "footerInfo": {
@@ -28,6 +36,11 @@
         "address": "123 Web Street, City, Country",
         "phone": "(000) 123-4567",
         "email": "contact@wagoxdesign.com"
+      },
+      "footerHeaders": {
+        "footerHeaderOneText": "Visit Us",
+        "footerHeaderTwoText": "Quick Links",
+        "footerHeaderThreeText": "Fllow Us"
       },
       "footerLinks": {
         "social": [
@@ -46,6 +59,11 @@
       "scriptsLinks": {
         "mainScript": "../assets/src/scripts/script.js",
         "headerDynamicsScript": "../assets/src/scripts/headerDynamics.js",
+        "parallaxImageScript": "../assets/src/scripts/parallaxImage.js",
+        "reviewsV2Script": "../assets/src/scripts/reviewsV2.js",
+        "reviewsV2mobileScript": "../assets/src/scripts/reviewsV2mobile.js",
+        "parallaxImageReviewV2Script": "../assets/src/scripts/parallaxImageReviewV2.js",
+        "galleryScript": "../assets/src/scripts/gallery.js",
         "loadComponentsScript": "../assets/src/scripts/loadComponents.js",
         "formValidationsScript": "../assets/src/scripts/formValidations.js",
         "scrollDynamicsScript": "../assets/src/scripts/scrollDynamics.js",
