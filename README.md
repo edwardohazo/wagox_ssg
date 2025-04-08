@@ -138,7 +138,3 @@ You can find built in components with its corresponding js, php and css files in
 Layout → Positioning → Display → Flex/Grid → Box Model (padding, margin, border) → Typography → Colors → Effects/Transforms/Transitions → Z-Index → Custom classes or overrides
 
 
-<!-- TDOD:  -->
-- Complete README.md with creating files docs []
-- Put content on base.js and data.js files and add placeholders on ejs files []
-
