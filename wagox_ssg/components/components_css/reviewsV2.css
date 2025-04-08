@@ -1,0 +1,30 @@
+/* Reviews v2 */
+.review-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.clamp-3 {
+  -webkit-line-clamp: 3; /* Show only 3 lines */
+  line-clamp: 3;
+}
+.expanded {
+  -webkit-line-clamp: unset; /* Removes the line limit */
+  line-clamp: unset;
+}
+/* Review button section */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+  

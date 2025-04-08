@@ -1,0 +1,169 @@
+/* About us section */
+
+/* 3D Slider Container */
+.slider-3d-wrapper {
+  
+}
+.slider-3d-container {
+  position: relative;
+  width: 120%;
+  left: -10%;
+  height: 400px;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  margin: 0 auto;
+}
+.slider-3d-track {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+.slider-3d-item {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: slideFlow 12s infinite linear;
+  opacity: 0;
+  backface-visibility: hidden;
+  will-change: transform;
+  transform-origin: center center;
+}
+/* Animation Delays */
+.slider-3d-item:nth-child(1) { animation-delay: 0s; }
+.slider-3d-item:nth-child(2) { animation-delay: 4s; }
+.slider-3d-item:nth-child(3) { animation-delay: 8s; }
+
+@keyframes slideFlow {
+  /* Enter from left */
+  0% {
+    transform: translateX(-150%) translateZ(-300px) rotateY(30deg) scale(0.6);
+    opacity: 0;
+  }
+  
+  /* Arrive at center (X movement complete) */
+  25% {
+    transform: translateX(0%) translateZ(-300px) rotateY(0deg) scale(0.8);
+    opacity: 0.8;
+  }
+
+  /* Move forward in Z-axis */
+  37.5% {
+    transform: translateX(0%) translateZ(0) rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+
+  /* Hold front position */
+  50% {
+    transform: translateX(0%) translateZ(0) rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+
+  /* Move back in Z-axis */
+  62.5% {
+    transform: translateX(0%) translateZ(-300px) rotateY(0deg) scale(0.8);
+    opacity: 0.8;
+  }
+
+  /* Start exiting to right */
+  75% {
+    transform: translateX(0%) translateZ(-300px) rotateY(0deg) scale(0.8);
+    opacity: 0.8;
+  }
+
+  /* Exit to right */
+  87.5% {
+    transform: translateX(150%) translateZ(-300px) rotateY(-30deg) scale(0.6);
+    opacity: 0;
+  }
+
+  /* Final state */
+  100% {
+    transform: translateX(150%) translateZ(-300px) rotateY(-30deg) scale(0.6);
+    opacity: 0;
+  }
+}
+
+/* Additional Fixes */
+.slider-3d-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateZ(0); /* Force hardware acceleration */
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    
+    /* About Us Section */
+    .slider-3d-container {
+      position: absolute;
+      width: 160%;
+      left: -30%;
+      height: 500px;
+      perspective: 800px;
+    }
+  
+    .slider-3d-item {
+      width: 90%;
+      left: 5%;
+      animation: slideFlowMobile 9s infinite linear; /* Adjusted timing */
+    }
+  
+    @keyframes slideFlowMobile {
+      /* Enter from left */
+      0% {
+        transform: translateX(-150%) translateZ(-300px) rotateY(30deg) scale(0.2);
+        opacity: 0;
+      }
+      
+      /* Arrive at center (X movement complete) */
+      25% {
+        transform: translateX(0%) translateZ(-300px) rotateY(0deg) scale(0.4);
+        opacity: 0.8;
+      }
+    
+      /* Move forward in Z-axis */
+      37.5% {
+        transform: translateX(0%) translateZ(0) rotateY(0deg) scale(0.6);
+        opacity: 1;
+      }
+    
+      /* Hold front position */
+      50% {
+        transform: translateX(0%) translateZ(0) rotateY(0deg) scale(0.6);
+        opacity: 1;
+      }
+    
+      /* Move back in Z-axis */
+      62.5% {
+        transform: translateX(0%) translateZ(-300px) rotateY(0deg) scale(0.4);
+        opacity: 0.8;
+      }
+    
+      /* Start exiting to right */
+      75% {
+        transform: translateX(0%) translateZ(-300px) rotateY(0deg) scale(0.2);
+        opacity: 0.8;
+      }
+    
+      /* Exit to right */
+      87.5% {
+        transform: translateX(150%) translateZ(-300px) rotateY(-30deg) scale(0.2);
+        opacity: 0;
+      }
+    
+      /* Final state */
+      100% {
+        transform: translateX(150%) translateZ(-300px) rotateY(-30deg) scale(0.6);
+        opacity: 0;
+      }
+    }
+  
+    .slider-3d-item:nth-child(1) { animation-delay: 0s; }
+    .slider-3d-item:nth-child(2) { animation-delay: 3s; }
+    .slider-3d-item:nth-child(3) { animation-delay: 6s; }
+  
+}

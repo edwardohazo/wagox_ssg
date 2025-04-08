@@ -96,7 +96,6 @@ cp ./wagox_ssg/components/components_js/servicesCardsTwo.js ./frontend/output/si
 cp ./wagox_ssg/components/general_js/scrollDynamics.js ./frontend/output/site/assets/src/scripts
 cp ./wagox_ssg/components/general_js/loadComponents.js ./frontend/output/site/assets/src/scripts
 cp ./wagox_ssg/components/general_js/loadComponents.js ./frontend/output/site/assets/src/scripts
-cp ./wagox_ssg/components/components_html/carousel.html ./frontend/output/site/assets/src/components
 cp ./wagox_ssg/assets/styles.css ./frontend/output/site/assets/public/css
 cp ./wagox_ssg/assets/images.json ./frontend/output/site/assets/data
 ```

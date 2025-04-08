@@ -1,0 +1,126 @@
+<!-- Header -->
+<header id="header" class="header shadow-md fixed w-full">
+
+    <!-- DESKTOP -->
+
+    <!-- Button and logo desktop header section -->
+    <div class="container hidden mx-auto px-4 py-4 md:flex md:justify-between md:items-center lg:flex lg:justify-between lg:items-center">
+
+      <!-- Logo for Desktop -->
+      <div class="text-2xl font-bold text-black w-1/3">
+        <a href="index.html" class="hover:text-gray-600 transition duration-300 hidden md:block lg:block">
+          <!-- WAGOX | DESIGN -->
+          <img src="../assets/public/images/logo.png" alt="Logo" class="h-36">
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="w-full hidden md:flex lg:flex relative bg-white w-1/3">
+        <!-- Navigation Items -->
+        <ul class="w-full flex justify-evenly py-3">
+          <!-- First link -->
+          <li class="ml-10">
+            <a href="<%= navItems[0].href %>" class="text-gray-700 transition duration-300"> <%= navItems[0].text %></a>
+          </li>
+
+          <!-- Second link -->
+          <li class="ml-10">
+            <a href="<%= navItems[1].href %>" class="text-gray-700 transition duration-300"><%= navItems[1].text %></a>
+          </li>
+
+          <!-- Dropdown - Third link -->
+          <li class="ml-10 relative th-link">
+            <a href="<%= navItems[2].href %>" class="group text-gray-700 transition duration-300">
+              <%= navItems[2].text %>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="th-link-dropdown-menu absolute hidden bg-white shadow-md rounded-lg mt-2 left-0 w-40">
+              <li><a href="<%= navItems[2].dropdown[0].href %>" class="block px-4 py-2 text-gray-700"><%= navItems[2].dropdown[0].text %></a></li>
+              <li><a href="<%= navItems[2].dropdown[1].href %>" class="block px-4 py-2 text-gray-700"><%= navItems[2].dropdown[1].text %></a></li>
+              <li><a href="<%= navItems[2].dropdown[2].href %>" class="block px-4 py-2 text-gray-700"><%= navItems[2].dropdown[2].text %></a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="w-1/3">
+        <button class="bg-black text-white px-20 py-3 border border-transparent hover:bg-white hover:border-black hover:text-black transition duration-300">
+          <a class="text-inherit" href="contact.html">Contact Us</a>
+        </button>        
+      </div>
+
+    </div>
+
+    <!-- Social Media -->
+    <div id="socials" class="socials text-center px-2 py-4 fixed top-56 bg-white right-0">
+      <div class="flex flex-col justify-center">
+        <!-- Phone -->
+        <a href="<%= socials.phone %>" target="_blank" class="text-black hover:text-white transition duration-300 my-2">
+          <i class="fa-solid fa-phone-volume phone-icon"></i>
+        </a>
+        <!-- Instagram -->
+        <a href="<%= socials.instagram %>" target="_blank" class="text-black hover:text-white transition duration-300 my-2">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="<%= socials.whatsapp %>" target="_blank" class="text-black hover:text-white transition duration-300 my-2">
+          <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+        <!-- Facebook -->
+        <a href="<%= socials.facebook %>" target="_blank" class="text-black hover:text-white transition duration-300 my-2">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <!-- TikTok -->
+        <a href="<%= socials.tiktok %>" target="_blank" class="text-black hover:text-white transition duration-300 my-2">
+          <i class="fab fa-tiktok fa-2x"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- MOBILE -->
+
+    <!-- Mobile logo section -->
+    <div class="w-full font-bold text-gray-800 md:hidden lg:hidden flex justify-between items-center">
+
+      <div></div>
+
+      <a href="index.html" class="hover:text-blue-400 transition duration-300">
+        <!-- WAGOX | DESIGN -->
+        <img src="../assets/public/images/logo.png" alt="Logo" class="logo-mobile h-36">
+        <!-- <img src="../assets/public/images/logo.png" alt="Logo" class="h-20"> -->
+      </a>
+
+      <button id="menu-toggle" class="md:hidden focus:outline-none justify-self-end">
+        <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="md:hidden mobile-menu bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+      <ul>
+        <% navItems.forEach(function(item) { %>
+          <% if (item.dropdown) { %>
+            <li class="relative">
+              <button class="w-full text-left text-gray-700 hover:text-blue-400 transition duration-300 py-2 pl-4 flex items-center justify-between dropdown-toggle">
+                <%= item.text %> <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <ul class="hidden dropdown-menu bg-white shadow-md rounded-lg">
+                <% item.dropdown.forEach(function(subItem) { %>
+                  <li><a href="<%= subItem.href %>" class="block px-4 py-2 text-gray-700 hover:bg-gray-100"><%= subItem.text %></a></li>
+                <% }); %>
+              </ul>
+            </li>
+          <% } else { %>
+            <li>
+              <a href="<%= item.href %>" class="block text-gray-700 hover:text-blue-400 transition duration-300 py-2 pl-4 hover:bg-gray-100"><%= item.text %></a>
+            </li>
+          <% } %>
+        <% }); %>
+      </ul>
+    </div>
+    
+
+</header>

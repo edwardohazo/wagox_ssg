@@ -1,0 +1,560 @@
+{
+  "en": {
+    "index": {
+      "headline": "We are your best option",
+      "parallaxButtonLHeader": "About Us",
+      "parallaxIndexImage": "parallax-index-image.jpg",
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "name": "BRANDI L.",
+          "rating": "★★★★★",
+          "text": "Jerry was absolutely fantastic. His communication and service was top notch! Everyone in our party thought he was great and his service was absolutely outstanding!"
+        },
+        {
+          "name": "ROBERT H. DALLAS",
+          "rating": "★★★★★",
+          "text": "Jerry is great! Professional driver, on time. We'll definitely ride with Jerry the next time we are in town!"
+        },
+        {
+          "name": "JEFF M.",
+          "rating": "★★★★★",
+          "text": "Jerry was fantastic. I called at the last minute and he was on his game and helped personally. This will be our new go to company when we visit Naples"
+        },
+        {
+          "name": "DAVID H.",
+          "rating": "★★★★★",
+          "text": "Great service, We booked transportation from southwest regional airport to Fort Myers Beach with Jerry. His driver James was professional and punctual both to and from our hotel. Highly recommended! Definitely will use again."
+        },
+        {
+          "name": "EILEEN",
+          "rating": "★★★★★",
+          "text": "Jerry is our guy. Will call Luxury Limo anytime we need a ride. Very professional and safe."
+        },
+        {
+          "name": "ELISSE C.",
+          "rating": "★★★★★",
+          "text": "Owners Jerry and Adrienne were extremely responsive and easy to reach. The night before our flight we were able to adjust our pickup time and our driver was even early. He was extremely professional, friendly, and it was a great, smooth ride! 10/10 would recommend hiring them for any of our needs!"
+        },
+        {
+          "name": "PAUL",
+          "rating": "★★★★★",
+          "text": "We are nervous driving in a car because we have been in an accident. Your driver was awesome. We will definitely use your company for all of our limo needs. Thank you, the Winger's"
+        }
+      ],
+      "aboutUsSection": {
+        "paragraphOne": "We are a passionate team dedicated to creating top-notch digital solutions.Our goal is to help businesses grow by providing innovative and reliable web and digital marketing services.",
+        "paragraphTwo": "Our team consists of experienced professionals who bring creative ideas and technical expertise to the table, ensuring the success of every project we take on.",
+        "paragraphThree": "Whether you're looking to build a brand-new website, optimize your current online presence, or create compelling marketing campaigns, we've got you covered.",
+        "images": ["slide-1.jpg", "slide-2.jpg", "slide-3.jpg"]
+      }
+    },
+    "about": {
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
+      "aboutUsSection": {
+        "paragraphOne": "We are a passionate team dedicated to creating top-notch digital solutions.Our goal is to help businesses grow by providing innovative and reliable web and digital marketing services.",
+        "paragraphTwo": "Our team consists of experienced professionals who bring creative ideas and technical expertise to the table, ensuring the success of every project we take on.",
+        "paragraphThree": "Whether you're looking to build a brand-new website, optimize your current online presence, or create compelling marketing campaigns, we've got you covered.",
+        "images": ["slide-1.jpg", "slide-2.jpg", "slide-3.jpg"]
+      },
+      "reviews": [
+        {
+          "name": "BRANDI L.",
+          "rating": "★★★★★",
+          "text": "Jerry was absolutely fantastic. His communication and service was top notch! Everyone in our party thought he was great and his service was absolutely outstanding!"
+        },
+        {
+          "name": "ROBERT H. DALLAS",
+          "rating": "★★★★★",
+          "text": "Jerry is great! Professional driver, on time. We'll definitely ride with Jerry the next time we are in town!"
+        },
+        {
+          "name": "JEFF M.",
+          "rating": "★★★★★",
+          "text": "Jerry was fantastic. I called at the last minute and he was on his game and helped personally. This will be our new go to company when we visit Naples"
+        },
+        {
+          "name": "DAVID H.",
+          "rating": "★★★★★",
+          "text": "Great service, We booked transportation from southwest regional airport to Fort Myers Beach with Jerry. His driver James was professional and punctual both to and from our hotel. Highly recommended! Definitely will use again."
+        },
+        {
+          "name": "EILEEN",
+          "rating": "★★★★★",
+          "text": "Jerry is our guy. Will call Luxury Limo anytime we need a ride. Very professional and safe."
+        },
+        {
+          "name": "ELISSE C.",
+          "rating": "★★★★★",
+          "text": "Owners Jerry and Adrienne were extremely responsive and easy to reach. The night before our flight we were able to adjust our pickup time and our driver was even early. He was extremely professional, friendly, and it was a great, smooth ride! 10/10 would recommend hiring them for any of our needs!"
+        },
+        {
+          "name": "PAUL",
+          "rating": "★★★★★",
+          "text": "We are nervous driving in a car because we have been in an accident. Your driver was awesome. We will definitely use your company for all of our limo needs. Thank you, the Winger's"
+        }
+      ]
+    },
+    "contact": {}
+  },
+  "es": {
+    "index": {
+      "headline": "We are your best option",
+      "parallaxButtonLHeader": "About Us",
+      "parallaxIndexImage": "parallax-index-image.jpg",
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "name": "BRANDI L.",
+          "rating": "★★★★★",
+          "text": "Jerry was absolutely fantastic. His communication and service was top notch! Everyone in our party thought he was great and his service was absolutely outstanding!"
+        },
+        {
+          "name": "ROBERT H. DALLAS",
+          "rating": "★★★★★",
+          "text": "Jerry is great! Professional driver, on time. We'll definitely ride with Jerry the next time we are in town!"
+        },
+        {
+          "name": "JEFF M.",
+          "rating": "★★★★★",
+          "text": "Jerry was fantastic. I called at the last minute and he was on his game and helped personally. This will be our new go to company when we visit Naples"
+        },
+        {
+          "name": "DAVID H.",
+          "rating": "★★★★★",
+          "text": "Great service, We booked transportation from southwest regional airport to Fort Myers Beach with Jerry. His driver James was professional and punctual both to and from our hotel. Highly recommended! Definitely will use again."
+        },
+        {
+          "name": "EILEEN",
+          "rating": "★★★★★",
+          "text": "Jerry is our guy. Will call Luxury Limo anytime we need a ride. Very professional and safe."
+        },
+        {
+          "name": "ELISSE C.",
+          "rating": "★★★★★",
+          "text": "Owners Jerry and Adrienne were extremely responsive and easy to reach. The night before our flight we were able to adjust our pickup time and our driver was even early. He was extremely professional, friendly, and it was a great, smooth ride! 10/10 would recommend hiring them for any of our needs!"
+        },
+        {
+          "name": "PAUL",
+          "rating": "★★★★★",
+          "text": "We are nervous driving in a car because we have been in an accident. Your driver was awesome. We will definitely use your company for all of our limo needs. Thank you, the Winger's"
+        }
+      ],
+      "aboutUsSection": {
+        "paragraphOne": "We are a passionate team dedicated to creating top-notch digital solutions.Our goal is to help businesses grow by providing innovative and reliable web and digital marketing services.",
+        "paragraphTwo": "Our team consists of experienced professionals who bring creative ideas and technical expertise to the table, ensuring the success of every project we take on.",
+        "paragraphThree": "Whether you're looking to build a brand-new website, optimize your current online presence, or create compelling marketing campaigns, we've got you covered.",
+        "images": ["slide-1.jpg", "slide-2.jpg", "slide-3.jpg"]
+      }
+    },
+    "about": {
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
+      "aboutUsSection": {
+        "paragraphOne": "We are a passionate team dedicated to creating top-notch digital solutions.Our goal is to help businesses grow by providing innovative and reliable web and digital marketing services.",
+        "paragraphTwo": "Our team consists of experienced professionals who bring creative ideas and technical expertise to the table, ensuring the success of every project we take on.",
+        "paragraphThree": "Whether you're looking to build a brand-new website, optimize your current online presence, or create compelling marketing campaigns, we've got you covered.",
+        "images": ["slide-1.jpg", "slide-2.jpg", "slide-3.jpg"]
+      },
+      "reviews": [
+        {
+          "name": "BRANDI L.",
+          "rating": "★★★★★",
+          "text": "Jerry was absolutely fantastic. His communication and service was top notch! Everyone in our party thought he was great and his service was absolutely outstanding!"
+        },
+        {
+          "name": "ROBERT H. DALLAS",
+          "rating": "★★★★★",
+          "text": "Jerry is great! Professional driver, on time. We'll definitely ride with Jerry the next time we are in town!"
+        },
+        {
+          "name": "JEFF M.",
+          "rating": "★★★★★",
+          "text": "Jerry was fantastic. I called at the last minute and he was on his game and helped personally. This will be our new go to company when we visit Naples"
+        },
+        {
+          "name": "DAVID H.",
+          "rating": "★★★★★",
+          "text": "Great service, We booked transportation from southwest regional airport to Fort Myers Beach with Jerry. His driver James was professional and punctual both to and from our hotel. Highly recommended! Definitely will use again."
+        },
+        {
+          "name": "EILEEN",
+          "rating": "★★★★★",
+          "text": "Jerry is our guy. Will call Luxury Limo anytime we need a ride. Very professional and safe."
+        },
+        {
+          "name": "ELISSE C.",
+          "rating": "★★★★★",
+          "text": "Owners Jerry and Adrienne were extremely responsive and easy to reach. The night before our flight we were able to adjust our pickup time and our driver was even early. He was extremely professional, friendly, and it was a great, smooth ride! 10/10 would recommend hiring them for any of our needs!"
+        },
+        {
+          "name": "PAUL",
+          "rating": "★★★★★",
+          "text": "We are nervous driving in a car because we have been in an accident. Your driver was awesome. We will definitely use your company for all of our limo needs. Thank you, the Winger's"
+        }
+      ]
+    },
+    "contact": {}
+  },
+  "fr": {
+    "index": {
+      "headline": "We are your best option",
+      "parallaxButtonLHeader": "About Us",
+      "parallaxIndexImage": "parallax-index-image.jpg",
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
+      "reviews": [
+        {
+          "name": "BRANDI L.",
+          "rating": "★★★★★",
+          "text": "Jerry was absolutely fantastic. His communication and service was top notch! Everyone in our party thought he was great and his service was absolutely outstanding!"
+        },
+        {
+          "name": "ROBERT H. DALLAS",
+          "rating": "★★★★★",
+          "text": "Jerry is great! Professional driver, on time. We'll definitely ride with Jerry the next time we are in town!"
+        },
+        {
+          "name": "JEFF M.",
+          "rating": "★★★★★",
+          "text": "Jerry was fantastic. I called at the last minute and he was on his game and helped personally. This will be our new go to company when we visit Naples"
+        },
+        {
+          "name": "DAVID H.",
+          "rating": "★★★★★",
+          "text": "Great service, We booked transportation from southwest regional airport to Fort Myers Beach with Jerry. His driver James was professional and punctual both to and from our hotel. Highly recommended! Definitely will use again."
+        },
+        {
+          "name": "EILEEN",
+          "rating": "★★★★★",
+          "text": "Jerry is our guy. Will call Luxury Limo anytime we need a ride. Very professional and safe."
+        },
+        {
+          "name": "ELISSE C.",
+          "rating": "★★★★★",
+          "text": "Owners Jerry and Adrienne were extremely responsive and easy to reach. The night before our flight we were able to adjust our pickup time and our driver was even early. He was extremely professional, friendly, and it was a great, smooth ride! 10/10 would recommend hiring them for any of our needs!"
+        },
+        {
+          "name": "PAUL",
+          "rating": "★★★★★",
+          "text": "We are nervous driving in a car because we have been in an accident. Your driver was awesome. We will definitely use your company for all of our limo needs. Thank you, the Winger's"
+        }
+      ],
+      "aboutUsSection": {
+        "paragraphOne": "We are a passionate team dedicated to creating top-notch digital solutions.Our goal is to help businesses grow by providing innovative and reliable web and digital marketing services.",
+        "paragraphTwo": "Our team consists of experienced professionals who bring creative ideas and technical expertise to the table, ensuring the success of every project we take on.",
+        "paragraphThree": "Whether you're looking to build a brand-new website, optimize your current online presence, or create compelling marketing campaigns, we've got you covered.",
+        "images": ["slide-1.jpg", "slide-2.jpg", "slide-3.jpg"]
+      }
+    },
+    "about": {
+      "ourServicesSection": {
+        "ourServicesHeader": "Our Services",
+        "services": [
+          {
+            "title": "Service 1",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 2",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 3",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          },
+          {
+            "title": "Service 4",
+            "bullets": [
+              "Bullet 1",
+              "Bullet 2",
+              "Bullet 3",
+              "Bullet 4",
+              "Bullet 5"
+            ]
+          }
+        ]
+      },
+      "aboutUsSection": {
+        "paragraphOne": "We are a passionate team dedicated to creating top-notch digital solutions.Our goal is to help businesses grow by providing innovative and reliable web and digital marketing services.",
+        "paragraphTwo": "Our team consists of experienced professionals who bring creative ideas and technical expertise to the table, ensuring the success of every project we take on.",
+        "paragraphThree": "Whether you're looking to build a brand-new website, optimize your current online presence, or create compelling marketing campaigns, we've got you covered.",
+        "images": ["slide-1.jpg", "slide-2.jpg", "slide-3.jpg"]
+      },
+      "reviews": [
+        {
+          "name": "BRANDI L.",
+          "rating": "★★★★★",
+          "text": "Jerry was absolutely fantastic. His communication and service was top notch! Everyone in our party thought he was great and his service was absolutely outstanding!"
+        },
+        {
+          "name": "ROBERT H. DALLAS",
+          "rating": "★★★★★",
+          "text": "Jerry is great! Professional driver, on time. We'll definitely ride with Jerry the next time we are in town!"
+        },
+        {
+          "name": "JEFF M.",
+          "rating": "★★★★★",
+          "text": "Jerry was fantastic. I called at the last minute and he was on his game and helped personally. This will be our new go to company when we visit Naples"
+        },
+        {
+          "name": "DAVID H.",
+          "rating": "★★★★★",
+          "text": "Great service, We booked transportation from southwest regional airport to Fort Myers Beach with Jerry. His driver James was professional and punctual both to and from our hotel. Highly recommended! Definitely will use again."
+        },
+        {
+          "name": "EILEEN",
+          "rating": "★★★★★",
+          "text": "Jerry is our guy. Will call Luxury Limo anytime we need a ride. Very professional and safe."
+        },
+        {
+          "name": "ELISSE C.",
+          "rating": "★★★★★",
+          "text": "Owners Jerry and Adrienne were extremely responsive and easy to reach. The night before our flight we were able to adjust our pickup time and our driver was even early. He was extremely professional, friendly, and it was a great, smooth ride! 10/10 would recommend hiring them for any of our needs!"
+        },
+        {
+          "name": "PAUL",
+          "rating": "★★★★★",
+          "text": "We are nervous driving in a car because we have been in an accident. Your driver was awesome. We will definitely use your company for all of our limo needs. Thank you, the Winger's"
+        }
+      ]
+    },
+    "contact": {}
+  }
+}

@@ -1,0 +1,52 @@
+<!-- Footer Content -->
+<footer class="bg-black text-white py-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+      
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Visit Us</h3>
+        <p class="text-gray-400"><%= footerInfo.address %></p>
+        <p class="text-gray-400 mt-2">Phone: 
+          <a href="tel:<%= footerInfo.phone %>" class="hover:text-blue-300 transition duration-300">
+            <%= footerInfo.phone %>
+          </a>
+        </p>
+        <p class="text-gray-400 mt-2">Email: 
+          <a href="mailto:<%= footerInfo.email %>" class="hover:text-blue-300 transition duration-300">
+            <%= footerInfo.email %>
+          </a>
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-3">
+          <% footerLinks.quickLinks.forEach(function(link) { %>
+            <li>
+              <a href="<%= link.href %>" class="text-gray-400 hover:text-blue-300 transition duration-300">
+                <%= link.text %>
+              </a>
+            </li>
+          <% }); %>
+        </ul>
+      </div>
+      
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+        <div class="flex justify-center md:justify-start space-x-8">
+          <% footerLinks.social.forEach(function(link) { %>
+            <a href="<%= link.url %>" target="_blank" class="text-gray-400 hover:text-blue-300 transition duration-300">
+              <i class="<%= link.iconClass %> fa-lg"></i>
+            </a>
+          <% }); %>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Copyright -->
+    <div class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+      &copy; <%= currentYear %> <%= footerInfo.companyName %>. All rights reserved.
+    </div>
+</footer>  

@@ -1,0 +1,76 @@
+{
+  "en": {
+    "base": {
+      "title": "Wagox Design",
+      "pageTitle": "Welcome to Wagox Design",
+      "cssPath": "../assets/public/css/styles.css",
+      "contactHeaderButtonText": "Contact Us",
+      "navItems": [
+        { "text": "About", "href": "about.html" },
+        { "text": "Blogs", "href": "blogs.html" },
+        { 
+          "text": "Services", 
+          "href": "#",
+          "dropdown": [
+            { "href": "sevice-one.html", "text": "Service 1" },
+            { "href": "sercive-two.html", "text": "Service 2" },
+            { "href": "service-three.html", "text": "Service 3" },
+            { "href": "service-four.html", "text": "Service 4" }          ]
+        },
+        { "text": "Contact", "href": "contact.html" }
+      ],
+      "workNavItems": [          
+        { "href": "projects-gallery.html", "text": "Project Gallery" }
+      ],
+      "socials": {
+        "phone": "xxxxxxxxxxxxxx",
+        "instagram": "xxxxxxxxxxxxxx",
+        "facebook": "xxxxxxxxxxxxxx",
+        "whatsapp": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "tiktok": "xxxxxxxxxxxxxx"
+      },
+      "fontAwesomePath": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css",
+      "currentYear": 2025,
+      "footerInfo": {
+        "companyName": "Wagox Design",
+        "address": "123 Web Street, City, Country",
+        "phone": "(000) 123-4567",
+        "email": "contact@wagoxdesign.com"
+      },
+      "footerHeaders": {
+        "footerHeaderOneText": "Visit Us",
+        "footerHeaderTwoText": "Quick Links",
+        "footerHeaderThreeText": "Fllow Us"
+      },
+      "footerLinks": {
+        "social": [
+          { "url": "#", "iconClass": "fab fa-facebook" },
+          { "url": "#", "iconClass": "fab fa-instagram" },
+          { "url": "#", "iconClass": "fab fa-whatsapp" },
+          { "url": "#", "iconClass": "fab fa-twitter" },
+          { "url": "#", "iconClass": "fab fa-linkedin" }
+        ],
+        "quickLinks": [
+          { "href": "privacy.html", "text": "Privacy Policy" },
+          { "href": "terms.html", "text": "Terms of Service" },
+          { "href": "faq.html", "text": "FAQs" }
+        ]
+      },
+      "scriptsLinks": {
+        "mainScript": "../assets/src/scripts/script.js",
+        "headerDynamicsScript": "../assets/src/scripts/headerDynamics.js",
+        "parallaxImageScript": "../assets/src/scripts/parallaxImage.js",
+        "reviewsV2Script": "../assets/src/scripts/reviewsV2.js",
+        "reviewsV2mobileScript": "../assets/src/scripts/reviewsV2mobile.js",
+        "parallaxImageReviewV2Script": "../assets/src/scripts/parallaxImageReviewV2.js",
+        "galleryScript": "../assets/src/scripts/gallery.js",
+        "loadComponentsScript": "../assets/src/scripts/loadComponents.js",
+        "formValidationsScript": "../assets/src/scripts/formValidations.js",
+        "scrollDynamicsScript": "../assets/src/scripts/scrollDynamics.js",
+        "reviewsScript": "../assets/src/scripts/reviews.js",
+        "servicesCardsTwoScript": "../assets/src/scripts/servicesCardsTwo.js",
+        "socialsDynamicsScript": "../assets/src/scripts/socialDynamics.js"
+      }
+    }
+  }
+}
