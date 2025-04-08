@@ -7,11 +7,21 @@
 
 - Backend: Node JS, EJS, Express.
 
+## Download and Setting Up SSG
 
-## Setting Up SSG
-
-- Put ssg dir inside a root directory named  'your_name_project_ssg'
-- Open that file on your IDE
+- Create a root directory named  'your_name_project_ssg'
+- Open the dir on your IDE
+- Run command:
+```sh
+npm init
+```
+- Press enter several times
+- npm install wagox_ssg
+- Go to /node_modules dir
+- Run command:
+```sh
+mv ./wagox_ssg ../ssg
+```
 
 ### Run The Following Commands on Terminal
 ```sh
