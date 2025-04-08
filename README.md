@@ -127,13 +127,18 @@ This should populate frontend/output/site/ with the necessary files.
 
 ## Updating generic content
 
-To update the generic content modify base.json and base.json files nested inside sgg.
+To update the generic content modify base.json and base.json files nested inside sgg dir.
 
 
 ## Embedding Components
 
 You can find built in components with its corresponding js, php and css files inside ssg/components dir
 
+1. Create a template with its corresponding page name ej contact.ejs inside wagox_ssg\templates
+2. Take a component from wagox_ssg/components/components_html
+3. Paste it on your ejs created file
+4. Create a js file inside frontend/output/site/assets/src/scripts with the same name as the html linked file
+5. Add its css inside ssg\components\components_css to frontend/output/site/assets/public/css/styles.css file
 
 ## Tailwind utility classes order
 
