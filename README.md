@@ -16,20 +16,17 @@
 npm init
 ```
 - Press enter several times
-- npm install wagox_ssg
-- Go to /node_modules dir:
 ```sh
+npm install wagox_ssg
 cd node_modules
-```
-- Move ssg to the root dir:
-```sh
-mv ./wagox_ssg ../ssg
+mv ./wagox_ssg ../
 cd ..
-rm -rf node_modules
 rm -rf package.json
 rm -rf package-lock.json
-cd ssg
+cd wagox_ssg
 npm install
+cd ..
+rm -rf node_modules
 ```
 
 
@@ -61,7 +58,6 @@ frontend/
 
 ### Create the necessary directories
 ```sh
-cd ..
 mkdir -p frontend/output/site/assets/data
 mkdir -p frontend/output/site/assets/public/css
 mkdir -p frontend/output/site/assets/public/fonts
@@ -75,14 +71,9 @@ mkdir -p frontend/output/site/fr
 ```
 
 
-### Create the necessary files
-```sh
-touch frontend/output/site/assets/data/images.json
-touch frontend/output/site/assets/public/css/styles.css
-```
 - Note: Js nor json files cannot be created on build cause they depends on the selected ejs component
 
-### Copy and Paste JavaScript and php files from the SSG in the corresponding frontend dirs
+### Copy and Paste JavaScript, php, html and css files from the SSG in the corresponding frontend dirs
 
 ssg/components/components_js frontend/output/site/assets/src/scripts
 ssg/components/general_js frontend/output/site/assets/src/scripts
@@ -90,27 +81,24 @@ ssg/components/components_php frontend/output/site/assets/src/scripts
 
 - Run the followind comand:
 ```sh
-cp ./ssg/components/components_js/headerDynamics.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/footer.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/aboutUs.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/faqs.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/gallery.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/parallaxImage.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/parallaxImageReviewV2.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/reviewsV2.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/reviewsV2mobile.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/formValidations.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/script.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_js/servicesCardsTwo.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/general_js/scrollDynamics.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/general_js/loadComponents.js ./frontend/output/site/assets/src/scripts
-cp ./ssg/components/components_php/send_email.php ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/headerDynamics.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/footer.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/aboutUs.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/faqs.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/gallery.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/parallaxImage.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/parallaxImageReviewV2.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/reviewsV2.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/reviewsV2mobile.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/formValidations.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/script.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/components_js/servicesCardsTwo.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/general_js/scrollDynamics.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/general_js/loadComponents.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/components/general_js/loadComponents.js ./frontend/output/site/assets/src/scripts
+cp ./wagox_ssg/assets/styles.css ./frontend/output/site/assets/public/css
+cp ./wagox_ssg/assets/images.json ./frontend/output/site/assets/data
 ```
-
-
-### Add components styles from components_css to folder:
-
-frontend/output/site/assets/public/css/styles.css
 
 
 ### Ensure your SSG outputs files correctly to the language directories
@@ -127,7 +115,8 @@ frontend/output/site/assets/public/css/styles.css
 Once everything is set up, generate the site by running:
 
 ```sh
-cd ssg && npm start
+cd wagox_ssg 
+npm start
 ```
 
 This should populate frontend/output/site/ with the necessary files.
