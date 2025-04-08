@@ -1,6 +1,6 @@
 {
   "name": "wagox_ssg",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "static site generator",
   "main": "index.js",
   "type": "module",
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "wagox_ssg": "^1.0.3"
   }
 }

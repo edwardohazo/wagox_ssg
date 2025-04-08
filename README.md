@@ -17,17 +17,21 @@ npm init
 ```
 - Press enter several times
 - npm install wagox_ssg
-- Go to /node_modules dir
-- Run command:
+- Go to /node_modules dir:
+```sh
+cd node_modules
+```
+- Move ssg to the root dir:
 ```sh
 mv ./wagox_ssg ../ssg
-```
-
-### Run The Following Commands on Terminal
-```sh
+cd ..
+rm -rf node_modules
+rm -rf package.json
+rm -rf package-lock.json
 cd ssg
 npm install
 ```
+
 
 ## Directory Structure
 
@@ -58,10 +62,13 @@ frontend/
 ### Create the necessary directories
 ```sh
 cd ..
+mkdir -p frontend/output/site/assets/data
 mkdir -p frontend/output/site/assets/public/css
 mkdir -p frontend/output/site/assets/public/fonts
 mkdir -p frontend/output/site/assets/public/images
 mkdir -p frontend/output/site/assets/src
+mkdir -p frontend/output/site/assets/src/components
+mkdir -p frontend/output/site/assets/src/scripts
 mkdir -p frontend/output/site/en
 mkdir -p frontend/output/site/es
 mkdir -p frontend/output/site/fr
@@ -72,25 +79,45 @@ mkdir -p frontend/output/site/fr
 ```sh
 touch frontend/output/site/assets/data/images.json
 touch frontend/output/site/assets/public/css/styles.css
-touch frontend/output/site/assets/data/images.json
 ```
-- Note: Js files cannot be created on build cause they depends on the selected ejs component
+- Note: Js nor json files cannot be created on build cause they depends on the selected ejs component
 
-### Locate JavaScript and php files from the SSG in the corresponding frontend dirs
+### Copy and Paste JavaScript and php files from the SSG in the corresponding frontend dirs
 
 ssg/components/components_js frontend/output/site/assets/src/scripts
+ssg/components/general_js frontend/output/site/assets/src/scripts
 ssg/components/components_php frontend/output/site/assets/src/scripts
 
-### Locate css files content from the SSG in the corresponding frontend file
+- Run the followind comand:
+```sh
+cp ./ssg/components/components_js/headerDynamics.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/footer.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/aboutUs.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/faqs.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/gallery.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/parallaxImage.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/parallaxImageReviewV2.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/reviewsV2.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/reviewsV2mobile.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/formValidations.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/script.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_js/servicesCardsTwo.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/general_js/scrollDynamics.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/general_js/loadComponents.js ./frontend/output/site/assets/src/scripts
+cp ./ssg/components/components_php/send_email.php ./frontend/output/site/assets/src/scripts
+```
 
-ssg/components/components_css/cc_files.css frontend/output/site/assets/public/css/styles.css
+
+### Add components styles from components_css to folder:
+
+frontend/output/site/assets/public/css/styles.css
 
 
 ### Ensure your SSG outputs files correctly to the language directories
 
 ## Notes
 - The `assets/public/` directory contains styles, fonts, and images.
-- The `assets/src/scripts` directory contains JavaScript files originally located in `ssg/components/components_js/`.
+- The `assets/src/scripts` directory contains JavaScript files originally located in `ssg/components/components_js/` and `ssg/components/general_js/`.
 - The `site/en/`, `site/es/`, and `site/fr/` directories store localized versions of the static site.
 - The SSG should be configured to generate files into the correct language directories.
 
@@ -122,5 +149,6 @@ Layout → Positioning → Display → Flex/Grid → Box Model (padding, margin,
 
 
 <!-- TDOD:  -->
-- Put coontent on bse.js and data.js files and add placeholders on ejs files []
 - Complete README.md with creating files docs []
+- Put content on base.js and data.js files and add placeholders on ejs files []
+
