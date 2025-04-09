@@ -134,13 +134,13 @@ To update the generic content modify base.json and base.json files nested inside
 
 You can find built in components with its corresponding js, php and css files inside ssg/components dir
 
-<!-- TODO: Improve steps -->
-1. Copy the code from a component on wagox_ssg/components/components_html dir
-2. Paste it on a template ejs file
-3. Create a js file inside frontend/output/site/assets/src/scripts with the same name as the html linked file
+1. Copy the code from a component.html inside wagox_ssg/components/components_html dir
+2. Paste it on a file inside ssg\templates dir
+3. Create a js file inside frontend/output/site/assets/src/scripts with the same name as the html linked to that file
 4. Add its css nested inside ssg/components/components_css to frontend/output/site/assets/public/css/styles.css file
 5. Add the path to the base.json file "yourScript": "../assets/src/scripts/your-script.js",
-6. Add a script tag on ssg\baseTemplate\base.ejs and the ejs placeholder to the script tag as href attribute value 
+6. Add a script tag on ssg\baseTemplate\base.ejs and the ejs placeholder to the script tag as href attribute value
+7. Make sure component`s pleceholders are included on data.json file
 
 
 ## Tailwind utility classes order

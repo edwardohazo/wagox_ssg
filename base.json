@@ -67,7 +67,6 @@
         "loadComponentsScript": "../assets/src/scripts/loadComponents.js",
         "formValidationsScript": "../assets/src/scripts/formValidations.js",
         "scrollDynamicsScript": "../assets/src/scripts/scrollDynamics.js",
-        "reviewsScript": "../assets/src/scripts/reviews.js",
         "servicesCardsTwoScript": "../assets/src/scripts/servicesCardsTwo.js",
         "socialsDynamicsScript": "../assets/src/scripts/socialDynamics.js"
       }
