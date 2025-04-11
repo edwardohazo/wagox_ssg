@@ -1,0 +1,15 @@
+/* Services */
+.parallax-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .parallax-bg-v2 {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+  }
